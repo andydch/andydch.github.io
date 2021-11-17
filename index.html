@@ -1290,7 +1290,7 @@
 					<!-- start slider item -->
 					<div
 						class="swiper-slide cover-background"
-						style="background-image: url('images/main/Bg_Home.jpg');"
+						style="background-image: url('images/main/Bg_Home.jpg')"
 					>
 						<div class="opacity-extra-medium bg-black"></div>
 						<div class="container position-relative full-screen">
@@ -1412,7 +1412,7 @@
 					<!-- start slider item -->
 					<div
 						class="swiper-slide cover-background"
-						style="background-image: url('images/main/BG_Login Page.png');"
+						style="background-image: url('images/main/BG_Login Page.png')"
 					>
 						<div class="opacity-extra-medium bg-black"></div>
 						<div class="container position-relative full-screen">
@@ -1829,12 +1829,18 @@
 			</div>
 		</section>
 		<!-- start feature box section -->
-		<section class="wow fadeIn text-center text-md-left">
+		<section
+			class="wow fadeIn text-center text-md-left"
+			style="
+				background-image: url('images/main/BG Value.jpg');
+				background-repeat: no-repeat;
+			"
+		>
 			<div class="container-fluid">
 				<div class="row">
 					<!-- start feature box item -->
 					<div class="col-12" style="text-align: center">
-						<h1 style="color: #000; text-align: left">Value</h1>
+						<h1 style="color: #fff; text-align: left">Value</h1>
 						<img
 							src="images/main/Infograph_Value-01.png"
 							data-rjs="images/main/Infograph_Value-01.png"
@@ -1912,14 +1918,55 @@
 							wow
 							fadeInUp
 							last-paragraph-no-margin
+							dropdown
+							simple-dropdown
 						"
 						style="background-color: rgb(178, 177, 175, 0.8); padding: 25px"
 					>
-						<img
+						<!-- <img
 							src="images/main/Final_BMS-01.png"
 							data-rjs="images/main/Final_BMS-01.png"
-							alt=""
-						/>
+							alt="Final_BMS-01.png"
+							class=""
+						/> -->
+						<a
+							href="#"
+							id="imageDropdown"
+							data-toggle="dropdown"
+							class="dropdown-toggle"
+						>
+							<img
+								src="images/main/Final_BMS-01.png"
+								data-rjs="images/main/Final_BMS-01.png"
+								alt="Final_BMS-01.png"
+								class=""
+							/>
+							<i
+								class="fas fa-angle-down dropdown-toggle"
+								data-toggle="dropdown"
+								aria-hidden="true"
+							></i>
+						</a>
+						<ul
+							class="dropdown-menu"
+							role="menu"
+							aria-labelledby="imageDropdown"
+							style="padding: 15px"
+						>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#">Menu item 1</a>
+							</li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#">Menu item 2</a>
+							</li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#">Menu item 3</a>
+							</li>
+							<li role="presentation" class="divider"></li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#">Menu item 4</a>
+							</li>
+						</ul>
 					</div>
 					<div
 						class="
@@ -2170,6 +2217,6 @@
 		<!-- setting -->
 		<script type="text/javascript" src="js/main.js"></script>
 
-		<!-- pastikan template ini sudah dibayar, info -> andy (andydch@gmail.com) -->
+		<!-- silakan support -> andy (andydch@gmail.com) -->
 	</body>
 </html>
