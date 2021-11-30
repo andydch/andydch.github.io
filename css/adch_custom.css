@@ -121,7 +121,8 @@ a.logo img {
 
 .bg-action-table {
 	color: #fff;
-	background-color: #963d11;
+	background-color: #000;
+	/* background-color: #963d11; */
 	padding: 5px;
 	border-radius: 25px;
 }
