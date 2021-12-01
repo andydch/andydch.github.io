@@ -41,7 +41,7 @@ a.logo img {
 	font-size: 25px;
 }
 .red-phone {
-	height: 900px;
+	height: 500px;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -115,7 +115,7 @@ a.logo img {
 		height: 1100px !important;
 	}
 	.red-phone {
-		height: 700px;
+		height: 800px;
 	}
 }
 @media only screen and (max-width: 375px) {
@@ -179,3 +179,20 @@ a.logo img {
 	border: 1px black solid;
 }
 /* --floating-menu - end */
+
+/* --zoom-in - start */
+.zoom {
+	/* padding: 50px; */
+	/* background-color: green; */
+	transition: transform 0.2s;
+	/* width: 200px; */
+	/* height: 200px; */
+	margin: 0 auto;
+}
+
+.zoom:hover {
+	-ms-transform: scale(1.5); /* IE 9 */
+	-webkit-transform: scale(1.5); /* Safari 3-8 */
+	transform: scale(1.5);
+}
+/* --zoom-in - end */
