@@ -43,6 +43,12 @@ a.logo img {
 .red-phone {
 	height: 500px;
 }
+.red-phone-icon {
+	padding: 50%;
+}
+.red-phone-frame {
+	width: 350px;
+}
 
 @media only screen and (min-width: 1000px) {
 	a.logo img {
@@ -118,10 +124,23 @@ a.logo img {
 		height: 800px;
 	}
 }
+@media only screen and (max-width: 412px) {
+	.red-phone-icon {
+		padding: 50%;
+	}
+}
+@media only screen and (max-width: 385px) {
+	.red-phone-frame {
+		width: 300px;
+	}
+}
 @media only screen and (max-width: 375px) {
 	.bg-height {
 		background-size: 500%;
 		height: 1000px;
+	}
+	.red-phone-frame {
+		width: 300px;
 	}
 }
 

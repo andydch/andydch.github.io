@@ -5,6 +5,16 @@
 	border: 1px solid #ccc;
 	background: #f4ecdc;
 }
+@media only screen and (max-width: 385px) {
+	.huicalendar.huicalendar1.huicalendar2 {
+		width: 300px;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.huicalendar.huicalendar1.huicalendar2 {
+		width: 300px;
+	}
+}
 /* .huicalendar.huicalendar1.huicalendar2 {
 	width: 180px;
 	padding: 2px;
