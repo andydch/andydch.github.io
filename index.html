@@ -1323,7 +1323,7 @@
 								href="index-bms.html"
 								coords="536,189,739,217"
 								shape="rec"
-								style="cursor: pointer;"
+								style="cursor: pointer"
 							/>
 						</map>
 						<div id="stakeholder" class="frame-style">
@@ -1631,6 +1631,9 @@
 
 		<!-- calendar -->
 		<script src="calendar/js/huicalendar.js"></script>
+
+		<script src="js/jquery.rwdImageMaps.min.js"></script>
+
 		<script>
 			$(".test")
 				.huicalendar({
@@ -1670,6 +1673,10 @@
 			function menu(m, act) {
 				document.getElementById(m).style.display = act;
 			}
+
+			$(document).ready(function (e) {
+				$("img[usemap]").rwdImageMaps();
+			});
 		</script>
 
 		<!-- silakan support -> andy (andydch@gmail.com) -->
