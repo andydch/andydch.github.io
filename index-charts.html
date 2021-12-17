@@ -1332,51 +1332,10 @@
 			style="margin-top: 5px !important"
 			class="wow fadeIn p-0 bg-light-gray top-space"
 		>
-			<!-- imagemap generator -->
-			<!-- https://www.image-map.net/ -->
 			<div class="container-fluid">
 				<div class="row" style="text-align: center">
 					<div class="col-12">
-						<!-- class="img-fluid zoom" -->
-						<!-- style="cursor: zoom-in;max-width: 1000px;" -->
-						<img
-							id="img-hirarki"
-							src="images/main/BMS Hirarki.png"
-							class=""
-							data-rjs="images/main/BMS Hirarki.png"
-							alt="BMS Hirarki.png"
-							style="max-width: 1000px"
-							usemap="#image-map"
-						/>
-						<map name="image-map">
-							<area
-								target=""
-								alt="Link 1"
-								title="Link 1"
-								href=""
-								coords="1785,536,2984,685"
-								shape="rect"
-								style="cursor: pointer"
-							/>
-							<area
-								target=""
-								alt="Link 2"
-								title="Link 2"
-								href=""
-								coords="1785,700,2966,871"
-								shape="rect"
-								style="cursor: pointer"
-							/>
-							<area
-								target=""
-								alt="Link 3"
-								title="Link 3"
-								href=""
-								coords="1832,877,2963,1059"
-								shape="rect"
-								style="cursor: pointer"
-							/>
-						</map>
+						<canvas id="myChart" width="400" height="100"></canvas>
 					</div>
 				</div>
 			</div>
@@ -1564,11 +1523,46 @@
         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>-->
 
-		<script src="js/jquery.rwdImageMaps.min.js"></script>
-		
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 		<script>
-			$(document).ready(function (e) {
-				$("img[usemap]").rwdImageMaps();
+			// https://www.chartjs.org/docs/latest/
+			const ctx = document.getElementById("myChart").getContext("2d");
+			const myChart = new Chart(ctx, {
+				type: "bar",
+				data: {
+					labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+					datasets: [
+						{
+							label: "# of Votes",
+							data: [12, 19, 3, 5, 2, 3],
+							backgroundColor: [
+								"rgba(255, 99, 132, 0.2)",
+								"rgba(54, 162, 235, 0.2)",
+								"rgba(255, 206, 86, 0.2)",
+								"rgba(75, 192, 192, 0.2)",
+								"rgba(153, 102, 255, 0.2)",
+								"rgba(255, 159, 64, 0.2)",
+							],
+							borderColor: [
+								"rgba(255, 99, 132, 1)",
+								"rgba(54, 162, 235, 1)",
+								"rgba(255, 206, 86, 1)",
+								"rgba(75, 192, 192, 1)",
+								"rgba(153, 102, 255, 1)",
+								"rgba(255, 159, 64, 1)",
+							],
+							borderWidth: 1,
+						},
+					],
+				},
+				options: {
+					scales: {
+						y: {
+							beginAtZero: true,
+						},
+					},
+				},
 			});
 		</script>
 

@@ -1273,9 +1273,10 @@
 						style="background-color: rgb(178, 177, 175, 0.8); padding: 25px"
 					>
 						<img
-							src="images/main/Final_BMS-02a.png"
-							data-rjs="images/main/Final_BMS-02a.png"
-							alt="Final_BMS-02a.png"
+							id="final-bms"
+							src="images/main/Final_BMS-01a.png"
+							data-rjs="images/main/Final_BMS-01a.png"
+							alt="Final_BMS-01a.png"
 							class=""
 							usemap="#patchMap"
 						/>
@@ -1663,6 +1664,32 @@
 
 		<script>
 			function showMenu(menuId) {
+				// alert(menuId);
+				switch (menuId) {
+					case "stakeholder":
+						$("#final-bms").attr("src", "images/main/Final_BMS-02a (2).png");
+						$("#final-bms").attr(
+							"data-rjs",
+							"images/main/Final_BMS-02a (2).png"
+						);
+						break;
+					case "menu2":
+						$("#final-bms").attr("src", "images/main/Final_BMS-05a.png");
+						$("#final-bms").attr("data-rjs", "images/main/Final_BMS-05a.png");
+						break;
+					case "menu3":
+						$("#final-bms").attr("src", "images/main/Final_BMS-06a.png");
+						$("#final-bms").attr("data-rjs", "images/main/Final_BMS-06a.png");
+						break;
+					case "menu4":
+						$("#final-bms").attr("src", "images/main/Final_BMS-04a.png");
+						$("#final-bms").attr("data-rjs", "images/main/Final_BMS-04a.png");
+						break;
+					default:
+						$("#final-bms").attr("src", "images/main/Final_BMS-01a.png");
+						$("#final-bms").attr("data-rjs", "images/main/Final_BMS-01a.png");
+				}
+
 				//hide all the menus
 				menus = ["stakeholder", "menu2", "menu3", "menu4"];
 				while (menus.length) menu(menus.shift(), "none");
